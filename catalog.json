@@ -6867,7 +6867,7 @@
           "status": "active"
         },
         "deepseek-v4.1-flash": {
-          "model_key": "deepseek/deepseek-v4.1-flash",
+          "model_key": "deepseek-v4.1-flash",
           "display_name": "DeepSeek V4.1 Flash",
           "provider": "deepseek",
           "category": "chat",
