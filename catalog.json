@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.5",
-  "updated_at": "2026-09-15T11:29:12Z",
+  "catalog_version": "1.0.6",
+  "updated_at": "2026-09-15T18:21:31Z",
   "brands": {
     "minimax": {
       "display_name": "minimax",
@@ -2484,8 +2484,7 @@
             "video_input": true
           },
           "supported_endpoint_types": [
-            "google-gemini",
-            "openai"
+            "google-gemini"
           ],
           "modalities": {
             "input": [
@@ -2791,8 +2790,7 @@
             "video_input": true
           },
           "supported_endpoint_types": [
-            "google-gemini",
-            "openai"
+            "google-gemini"
           ],
           "modalities": {
             "input": [
@@ -3063,8 +3061,7 @@
             "video_input": true
           },
           "supported_endpoint_types": [
-            "google-gemini",
-            "openai"
+            "google-gemini"
           ],
           "modalities": {
             "input": [
@@ -3980,8 +3977,7 @@
             "video_input": true
           },
           "supported_endpoint_types": [
-            "google-gemini",
-            "openai"
+            "google-gemini"
           ],
           "modalities": {
             "input": [
@@ -3999,7 +3995,7 @@
           "max_output_tokens": 65536,
           "input_price": 0.75,
           "output_price": 3.75,
-          "cache_read_ratio": null,
+          "cache_read_ratio": 0.1,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
@@ -4164,8 +4160,7 @@
             "video_input": true
           },
           "supported_endpoint_types": [
-            "google-gemini",
-            "openai"
+            "google-gemini"
           ],
           "modalities": {
             "input": [
@@ -4183,7 +4178,7 @@
           "max_output_tokens": 65536,
           "input_price": 0.75,
           "output_price": 3.75,
-          "cache_read_ratio": null,
+          "cache_read_ratio": 0.1,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
