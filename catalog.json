@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.1",
-  "updated_at": "2026-09-14T11:28:25Z",
+  "catalog_version": "1.0.3",
+  "updated_at": "2026-09-15T08:56:02Z",
   "brands": {
     "minimax": {
       "display_name": "minimax",
@@ -35,8 +35,8 @@
           "max_output_tokens": 131072,
           "input_price": 0.3,
           "output_price": 1.2,
-          "cache_read_ratio": null,
-          "cache_write_ratio": null,
+          "cache_read_ratio": 0.1,
+          "cache_write_ratio": 1.25,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
           "status": "active",
@@ -58,7 +58,9 @@
           },
           "cost": {
             "input": 0.3,
-            "output": 1.2
+            "output": 1.2,
+            "cache_read": 0.03,
+            "cache_write": 0.375
           }
         },
         "MiniMax-M2.1": {
@@ -204,7 +206,7 @@
           "max_output_tokens": 131072,
           "input_price": 0.6,
           "output_price": 2.4,
-          "cache_read_ratio": 0.1,
+          "cache_read_ratio": 0.05,
           "cache_write_ratio": 0.625,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
@@ -228,7 +230,7 @@
           "cost": {
             "input": 0.6,
             "output": 2.4,
-            "cache_read": 0.06,
+            "cache_read": 0.03,
             "cache_write": 0.375
           }
         },
@@ -5623,8 +5625,8 @@
           },
           "context_window": 1000000,
           "max_output_tokens": 131072,
-          "input_price": 0.075,
-          "output_price": 0.25,
+          "input_price": 0.15,
+          "output_price": 0.5,
           "cache_read_ratio": 0.2,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
@@ -5660,9 +5662,9 @@
             "output": 131072
           },
           "cost": {
-            "input": 0.075,
-            "output": 0.25,
-            "cache_read": 0.015,
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03,
             "cache_write": 0
           }
         },
@@ -5827,7 +5829,7 @@
           "max_output_tokens": 131072,
           "input_price": 1.4,
           "output_price": 4.4,
-          "cache_read_ratio": null,
+          "cache_read_ratio": 0.1857142857,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
@@ -6691,9 +6693,9 @@
           },
           "context_window": 1000000,
           "max_output_tokens": 384000,
-          "input_price": 0.435,
-          "output_price": 0.87,
-          "cache_read_ratio": 0.00833333,
+          "input_price": 0.66,
+          "output_price": 1.98,
+          "cache_read_ratio": 0.03333333,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
@@ -6730,10 +6732,10 @@
             "output": 384000
           },
           "cost": {
-            "input": 0.435,
-            "output": 0.87,
-            "reasoning": 0.87,
-            "cache_read": 0.003625
+            "input": 0.66,
+            "output": 1.98,
+            "reasoning": 1.98,
+            "cache_read": 0.022
           }
         },
         "deepseek-flash": {
@@ -6767,7 +6769,7 @@
           "max_output_tokens": 384000,
           "input_price": 0.15,
           "output_price": 0.6,
-          "cache_read_ratio": null,
+          "cache_read_ratio": 0.02,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
@@ -6897,7 +6899,7 @@
           "max_output_tokens": 384000,
           "input_price": 0.15,
           "output_price": 0.6,
-          "cache_read_ratio": null,
+          "cache_read_ratio": 0.02,
           "cache_write_ratio": null,
           "cache_write_1h_ratio": null,
           "pricing_source": "manual",
