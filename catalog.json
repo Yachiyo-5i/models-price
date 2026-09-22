@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.7",
-  "updated_at": "2026-09-20T05:31:24Z",
+  "catalog_version": "1.1.0",
+  "updated_at": "2026-09-22T17:31:11Z",
   "brands": {
     "minimax": {
       "display_name": "minimax",
@@ -13088,6 +13088,123 @@
     "xiaomi": {
       "display_name": "xiaomi",
       "models": {
+        "mimo-v2.6-pro": {
+          "model_key": "mimo-v2.6-pro",
+          "display_name": "MiMo-V2.6-Pro",
+          "provider": "xiaomi",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": true,
+            "audio_input": true,
+            "video_input": true
+          },
+          "supported_endpoint_types": [
+            "openai",
+            "openai-response",
+            "anthropic-messages"
+          ],
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "audio",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": null,
+          "max_output_tokens": 131072,
+          "input_price": 0.435,
+          "output_price": 0.87,
+          "cache_read_ratio": 0.0082758621,
+          "cache_write_ratio": null,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active"
+        },
+        "mimo-v2.6-flash": {
+          "model_key": "mimo-v2.6-flash",
+          "display_name": "MiMo-V2.6-Flash",
+          "provider": "xiaomi",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": true,
+            "audio_input": true,
+            "video_input": true
+          },
+          "supported_endpoint_types": [
+            "openai",
+            "openai-response",
+            "anthropic-messages"
+          ],
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "audio",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": null,
+          "max_output_tokens": 131072,
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "cache_read_ratio": 0.02,
+          "cache_write_ratio": null,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active"
+        },
+        "mimo-v2.6-pro-ultraspeed": {
+          "model_key": "mimo-v2.6-pro-ultraspeed",
+          "display_name": "MiMo-V2.6-Pro-UltraSpeed",
+          "provider": "xiaomi",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": true,
+            "audio_input": true,
+            "video_input": true
+          },
+          "supported_endpoint_types": [
+            "openai",
+            "openai-response",
+            "anthropic-messages"
+          ],
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "audio",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": null,
+          "max_output_tokens": 131072,
+          "input_price": 4.35,
+          "output_price": 8.7,
+          "cache_read_ratio": 0.0082758621,
+          "cache_write_ratio": null,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active"
+        },
         "mimo-v2.5": {
           "model_key": "mimo-v2.5",
           "display_name": "MiMo-V2.5",
