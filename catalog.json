@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.1.0",
-  "updated_at": "2026-09-22T19:02:28Z",
+  "catalog_version": "1.1.1",
+  "updated_at": "2026-09-22T20:15:11Z",
   "brands": {
     "minimax": {
       "display_name": "minimax",
@@ -2355,7 +2355,8 @@
             "video_input": false
           },
           "supported_endpoint_types": [
-            "google-gemini"
+            "google-gemini",
+            "openai-image"
           ],
           "modalities": {
             "input": [
@@ -3625,7 +3626,8 @@
             "video_input": false
           },
           "supported_endpoint_types": [
-            "google-gemini"
+            "google-gemini",
+            "openai-image"
           ],
           "modalities": {
             "input": [
