@@ -36,6 +36,7 @@ catalog.schema.json   JSON Schema
 - `anthropic-messages`：Anthropic Messages 协议
 - `google-gemini`：Gemini 原生协议
 - `openai-image`：OpenAI 图片生成协议
+- `systemone`：TypeSafe System One 协议（`POST /v1/systemone`，请求体为 `model` + `state` + `questions`，不是 `messages`）
 
 协议必须按模型实际能力填写，不能仅根据品牌或模型类别推断。模型支持多个协议时，按稳定性和完整性列出全部可用协议。
 
