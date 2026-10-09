@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.3.1",
-  "updated_at": "2026-10-08T06:04:00Z",
+  "catalog_version": "1.4.0",
+  "updated_at": "2026-10-09T07:10:00Z",
   "brands": {
     "minimax": {
       "display_name": "minimax",
@@ -14118,6 +14118,489 @@
             "input": 0.042,
             "output": 0.0
           }
+        }
+      }
+    },
+    "qwen": {
+      "display_name": "qwen",
+      "models": {
+        "qwen3.8-max": {
+          "model_key": "qwen3.8-max",
+          "display_name": "Qwen3.8-Max",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": true,
+            "audio_input": false,
+            "video_input": true
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 1000000,
+          "max_output_tokens": 131072,
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "cache_read_ratio": 0.125,
+          "cache_write_ratio": 1.25,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen3.8-max",
+          "name": "Qwen3.8-Max",
+          "description": "MoE flagship with 1M context, vision/video input, and agent workflows",
+          "family": "qwen-max",
+          "attachment": true,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2026-09-02",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 1000000,
+            "output": 131072
+          },
+          "cost": {
+            "input": 2.0,
+            "output": 6.0,
+            "cache_read": 0.25,
+            "cache_write": 2.5
+          },
+          "pricing_variants": {
+            "prompt_over_100k": {
+              "input_price": 0.5,
+              "output_price": 2.5,
+              "cache_read": 0.05,
+              "cache_write": 0.625,
+              "cache_write_1h": 1.0
+            },
+            "explicit_cache_read": {
+              "cache_read": 0.17
+            }
+          },
+          "aliases": [
+            "qwen3.8-max-0902",
+            "qwen3.8-max-2026-09-02"
+          ]
+        },
+        "qwen3.7-max": {
+          "model_key": "qwen3.7-max",
+          "display_name": "Qwen3.7-Max",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": false,
+            "audio_input": false,
+            "video_input": false
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 1000000,
+          "max_output_tokens": 131072,
+          "input_price": 1.65,
+          "output_price": 4.951,
+          "cache_read_ratio": 0.2,
+          "cache_write_ratio": 1.25030303,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen3.7-max",
+          "name": "Qwen3.7-Max",
+          "description": "Qwen3.7 Max for agent-centric coding, office work, and long-horizon execution",
+          "family": "qwen-max",
+          "attachment": false,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2026-05-20",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 1000000,
+            "output": 131072
+          },
+          "cost": {
+            "input": 1.65,
+            "output": 4.951,
+            "cache_read": 0.33,
+            "cache_write": 2.063
+          },
+          "pricing_variants": {
+            "explicit_cache_read": {
+              "cache_read": 0.165
+            }
+          },
+          "aliases": [
+            "qwen3.7-max-2026-05-20"
+          ]
+        },
+        "qwen3.7-plus": {
+          "model_key": "qwen3.7-plus",
+          "display_name": "Qwen3.7-Plus",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": true,
+            "audio_input": false,
+            "video_input": true
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 1000000,
+          "max_output_tokens": 131072,
+          "input_price": 0.276,
+          "output_price": 1.101,
+          "cache_read_ratio": 0.20289855,
+          "cache_write_ratio": 1.24637681,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen3.7-plus",
+          "name": "Qwen3.7-Plus",
+          "description": "Cost-effective Qwen3.7 with multimodal agent and GUI interaction capabilities",
+          "family": "qwen-plus",
+          "attachment": true,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2026-05-26",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 1000000,
+            "output": 131072
+          },
+          "cost": {
+            "input": 0.276,
+            "output": 1.101,
+            "cache_read": 0.056,
+            "cache_write": 0.344
+          },
+          "pricing_variants": {
+            "input_over_256k": {
+              "input_price": 0.826,
+              "output_price": 3.301,
+              "cache_read": 0.166,
+              "cache_write": 1.032,
+              "explicit_cache_read": 0.083
+            },
+            "explicit_cache_read": {
+              "cache_read": 0.028
+            }
+          },
+          "aliases": [
+            "qwen3.7-plus-2026-05-26"
+          ]
+        },
+        "qwen3-max": {
+          "model_key": "qwen3-max",
+          "display_name": "Qwen3-Max",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": false,
+            "audio_input": false,
+            "video_input": false
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 262144,
+          "max_output_tokens": 65536,
+          "input_price": 0.359,
+          "output_price": 1.434,
+          "cache_read_ratio": 0.2005571,
+          "cache_write_ratio": 1.24791086,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen3-max",
+          "name": "Qwen3-Max",
+          "description": "Qwen3 Max with integrated thinking and tool use for complex agents",
+          "family": "qwen-max",
+          "attachment": false,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2026-01-23",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 262144,
+            "output": 65536
+          },
+          "cost": {
+            "input": 0.359,
+            "output": 1.434,
+            "cache_read": 0.072,
+            "cache_write": 0.448
+          },
+          "pricing_variants": {
+            "input_over_32k": {
+              "input_price": 0.574,
+              "output_price": 2.294,
+              "cache_read": 0.115,
+              "cache_write": 0.717,
+              "explicit_cache_read": 0.058
+            },
+            "input_over_128k": {
+              "input_price": 1.004,
+              "output_price": 4.014,
+              "cache_read": 0.201,
+              "cache_write": 1.255,
+              "explicit_cache_read": 0.101
+            },
+            "explicit_cache_read": {
+              "cache_read": 0.036
+            }
+          },
+          "aliases": [
+            "qwen3-max-2026-01-23"
+          ]
+        },
+        "qwen-plus": {
+          "model_key": "qwen-plus",
+          "display_name": "Qwen-Plus",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": false,
+            "audio_input": false,
+            "video_input": false
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 1000000,
+          "max_output_tokens": 32768,
+          "input_price": 0.115,
+          "output_price": 0.287,
+          "cache_read_ratio": 0.2,
+          "cache_write_ratio": 1.25217391,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen-plus",
+          "name": "Qwen-Plus",
+          "description": "Balanced Qwen Plus with thinking mode and 1M context for general agents",
+          "family": "qwen-plus",
+          "attachment": false,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2025-12-01",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 1000000,
+            "output": 32768
+          },
+          "cost": {
+            "input": 0.115,
+            "output": 0.287,
+            "cache_read": 0.023,
+            "cache_write": 0.144,
+            "reasoning": 1.147
+          },
+          "pricing_variants": {
+            "input_over_128k": {
+              "input_price": 0.345,
+              "output_price": 2.868,
+              "cache_read": 0.069,
+              "cache_write": 0.431,
+              "explicit_cache_read": 0.035,
+              "output_thinking": 3.441
+            },
+            "input_over_256k": {
+              "input_price": 0.689,
+              "output_price": 6.881,
+              "cache_read": 0.138,
+              "cache_write": 0.861,
+              "explicit_cache_read": 0.069,
+              "output_thinking": 9.175
+            },
+            "explicit_cache_read": {
+              "cache_read": 0.012
+            }
+          },
+          "aliases": [
+            "qwen-plus-2025-12-01"
+          ]
+        },
+        "qwen-flash": {
+          "model_key": "qwen-flash",
+          "display_name": "Qwen-Flash",
+          "provider": "qwen",
+          "category": "chat",
+          "capabilities": {
+            "reasoning": true,
+            "tool_calling": true,
+            "structured_output": true,
+            "image_input": false,
+            "audio_input": false,
+            "video_input": false
+          },
+          "supported_endpoint_types": [
+            "openai"
+          ],
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "context_window": 1000000,
+          "max_output_tokens": 32768,
+          "input_price": 0.022,
+          "output_price": 0.216,
+          "cache_read_ratio": 0.22727273,
+          "cache_write_ratio": 1.27272727,
+          "cache_write_1h_ratio": null,
+          "pricing_source": "manual",
+          "status": "active",
+          "id": "qwen-flash",
+          "name": "Qwen-Flash",
+          "description": "Fast Qwen Flash with thinking toggle and tiered 1M context pricing",
+          "family": "qwen-flash",
+          "attachment": false,
+          "reasoning": true,
+          "reasoning_options": [
+            {
+              "type": "toggle"
+            }
+          ],
+          "tool_call": true,
+          "structured_output": true,
+          "temperature": true,
+          "release_date": "2025-07-28",
+          "last_updated": "2026-10-09",
+          "open_weights": false,
+          "limit": {
+            "context": 1000000,
+            "output": 32768
+          },
+          "cost": {
+            "input": 0.022,
+            "output": 0.216,
+            "cache_read": 0.005,
+            "cache_write": 0.028
+          },
+          "pricing_variants": {
+            "input_over_128k": {
+              "input_price": 0.087,
+              "output_price": 0.861,
+              "cache_read": 0.018,
+              "cache_write": 0.109,
+              "explicit_cache_read": 0.009
+            },
+            "input_over_256k": {
+              "input_price": 0.173,
+              "output_price": 1.721,
+              "cache_read": 0.035,
+              "cache_write": 0.216,
+              "explicit_cache_read": 0.017
+            },
+            "explicit_cache_read": {
+              "cache_read": 0.002
+            }
+          },
+          "aliases": [
+            "qwen-flash-2025-07-28"
+          ]
         }
       }
     }
